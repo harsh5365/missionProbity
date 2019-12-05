@@ -1,0 +1,415 @@
+/*--reset--*/
+/*
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}*/
+/* 
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*--start editing from here--*/
+
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+
+.txt-center {
+    text-align: center;
+}
+
+/* text align center */
+
+.float-rt {
+    float: right;
+}
+
+/* float right */
+
+.float-lt {
+    float: left;
+}
+
+/* float left */
+
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+
+img {
+    max-width: 100%;
+}
+ */
+/*--end reset--*/
+
+/* body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 100%;
+    background:url("img/bg.jpg") !important;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+     min-height: 80vh;
+    text-align: center;
+} */
+/* .login
+{
+    background:url("img/bg.jpg") !important;
+} */
+
+.student-login {
+    /*display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+	padding-top:150px;*/
+	
+}
+
+
+.log {
+	width:400px;
+    font-size: 2.8em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+    /*margin:100px 0px 80px 100px;*/
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+	padding-bottom:35px;
+	
+}
+
+.student-login form {
+    max-width: 500px;
+    margin: 0 5vw !important;
+   /* padding: 3.5vw;*/
+    border-width: 5px 0 !important;
+    box-sizing: border-box !important;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    background: rgba(252, 254, 255, 0.11);
+	padding:35px ;
+	
+}
+
+.student-field-txt {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    margin-bottom: 1.5em;
+}
+.student-login input[type="email"], .student-login input[type="password"] {
+    width: 100% !important;
+    height: 34px;
+    color: #fff;
+    outline: none !important;
+    background: rgba(0, 0, 0, 0.32) !important;
+    font-size: 17px !important;
+    letter-spacing: 0.5px !important;
+    /* line-height: 25px; */
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    /* border-bottom: 1px solid #929191; */
+    -webkit-appearance: none;
+    font-family: 'Catamaran', sans-serif !important;
+    /* background: transparent; */
+}
+.student-login ::-webkit-input-placeholder {
+    color: #eee;    
+ } 
+ .student-login :-moz-placeholder { /* Firefox 18- */
+    color: #eee; 
+ } 
+ .student-login ::-moz-placeholder {  /* Firefox 19+ */
+    color: #eee;  
+ } 
+ .student-login :-ms-input-placeholder {  
+    color:#eee;
+ }
+.check1 {
+    text-align: left;
+}
+label.check {
+    color: #ededed;
+    letter-spacing: 1px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.student_label {
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+.student-login.w3l-sub {
+    margin-top: 1em;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+}
+
+.student-login input[type=submit] {
+    color: #ffffff !important;
+    font-weight: 100 !important;
+    width: 100% !important;
+    padding: 0.4em 0 !important;
+    font-size: 1em !important;
+    font-weight: 400;
+    letter-spacing: 2px !important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #000;
+    font-family: 'Catamaran', sans-serif;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+
+.student-login input[type=submit]:hover {
+    color: #fff;
+    box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+    transform: translateY(5px);
+}
+
+.student-bot {
+    margin-top: 1em;
+    width: 100%;
+}
+
+
+
+
+/*--responsive--*/
+@media(max-width:1024px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 2.3em;
+    }
+    .student-login form {
+        padding: 7.5vw;
+    }
+}
+@media(max-width:568px) {
+    .student-login{
+        flex-direction: column;
+    }
+    .student-login img{ 
+        order:1;
+        margin-top: 1em;
+    }
+}
+
+@media(max-width:440px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    .parent {
+        display: block;
+    }
+}
+
+@media(max-width:320px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .student-login form {
+        padding: 25px 8px;
+    }
+}
+
+/*--//responsive--*/

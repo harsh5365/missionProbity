@@ -1,0 +1,651 @@
+<?php
+include 'get_state.php';
+?>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="WowThemez">
+
+	<title>Charitify || NGO/Charity/Fundraising Template</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<!-- Font Awesome Icons CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Themify Icons CSS -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Elegant Font Icons CSS -->
+	<link rel="stylesheet" href="css/elegant-font-icons.css">
+	<!-- Elegant Line Icons CSS -->
+	<link rel="stylesheet" href="css/elegant-line-icons.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Venobox CSS -->
+	<link rel="stylesheet" href="css/venobox/venobox.css">
+	<!-- OWL-Carousel CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<!-- Slick Nav CSS -->
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<!-- Css Animation CSS -->
+	<link rel="stylesheet" href="css/css-animation.min.css">
+	<!-- Nivo Slider CSS -->
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="\xampp\htdocs\project\tools\CodeSeven-toastr-50092cc/build/toastr.css/>
+		<script type="
+	 text/javascript" src="\xampp\htdocs\project\tools\CodeSeven-toastr-50092cc/build/toastr.min.js">
+	</script>
+	<link href="css/showhide.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/showhide.js"></script>
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		.page-title h1 {
+			margin: 0;
+			padding: 5px 0 5px 20px;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.page-title {
+			font-size: 34px;
+			color: #F8B864;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+
+		.page-title {
+			background: #F8B864;
+			background: -moz-linear-gradient(left, #F8B864 0%, #feffff 80%);
+			background: -webkit-linear-gradient(left, #F8B864 0%, #feffff 80%);
+			background: linear-gradient(to right, #F8B864 0%, #feffff 80%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8B864', endColorstr='#feffff', GradientType=1);
+		}
+
+		.header-height .page-title {
+			padding-top: 30px;
+		}
+
+
+
+		.rectangle-list a {
+			position: relative;
+			display: block;
+			padding: .6em .6em .6em .2.5em;
+			padding: .4em;
+			margin: .5em 0 .5em 2.5em;
+			background: #ddd;
+			color: #444;
+			text-decoration: none;
+			transition: all .3s ease-out;
+			width: 45%;
+			float: left;
+			margin-left: 4.5%;
+
+		}
+
+		.rectangle-list a:hover {
+			background: #eee;
+		}
+
+		.rectangle-list a:before {
+			content: counter(li);
+			counter-increment: li;
+			position: absolute;
+			left: -2.5em;
+			top: 50%;
+			margin-top: -1em;
+			background: #F8B864;
+			height: 2em;
+			width: 2em;
+			line-height: 2em;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.rectangle-list a:after {
+			position: absolute;
+			content: '';
+			border: .5em solid transparent;
+			left: -1em;
+			top: 50%;
+			margin-top: -.5em;
+			transition: all .3s ease-out;
+		}
+
+		.rectangle-list a:hover:after {
+			left: -.5em;
+			border-left-color: #F8B864;
+		}
+
+
+		ol {
+			counter-reset: li;
+			/* Initiate a counter */
+			list-style: none;
+			/* Remove default numbering */
+			*list-style: decimal;
+			/* Keep using default numbering for IE6/7 */
+			font: 15px 'trebuchet MS', 'lucida sans';
+			padding: 0;
+			margin-bottom: 4em;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+		}
+
+		ol ol {
+			margin: 0 0 0 2em;
+			/* Add some left margin for inner lists */
+		}
+
+
+		.breadcrumbs {
+			padding-top: 9px;
+			padding-bottom: 4px;
+		}
+	</style>
+	<style>
+		body{
+		background-color:#eeeff3;
+		text-align:center
+		}
+		#main{
+		position:relative;
+		margin-top:15px
+		}
+		
+		#first{
+		width:450px;
+		margin-top:0;
+		padding:28px 25px;
+		background-color:#fff;
+		border:1px solid #000;
+		border-radius:5;
+		position:absolute;
+		left:50%;
+		margin-left:-180px;
+		top:0
+		}
+		#second{
+		width:450px;
+		margin-top:0;
+		padding:28px 25px;
+		background-color:#fff;
+		display:none;
+		border:1px solid #000;
+		border-radius:5;
+		position:absolute;
+		left:50%;
+		margin-left:-180px;
+		top:0
+		}
+		h3{
+		margin-top:0
+		}
+		input[type=text],[type=password]{
+		padding:4px;
+		width:96%;
+		height:40px  !important;
+		margin-top:15px;
+		font-size:14px
+
+		}
+		input[type=button]{
+		background:linear-gradient(to bottom,#f8b864 5%,#36caf0 100%);
+		box-shadow:inset 0 1px 0 0 #7bdcf4;
+		border:1px solid #0F799E;
+		color:#fff;
+		width:385px;
+		height:40px;
+		margin-top:15px;
+		font-size:18px;
+		font-weight:700;
+		cursor:pointer;
+		text-shadow:0 1px 0 #13506D
+		}
+		input[type=button]:hover{
+		background:linear-gradient(to bottom,#36caf0 5%,#22abe9 100%)
+		}
+		a{
+		text-decoration:none;
+		color:#6495ed
+		}
+		p#two{
+
+		amargin-bottom: 0px;
+		margin-right: 00px;
+		padding-top: 0px;
+	
+		}
+		p#one
+		{
+           float: left;
+           margin-bottom: 0px;
+           amargin-left: 60px;
+		}
+		.modal {
+		display:none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.4);
+		}
+		.modal-content {
+		background-color: #fefefe;
+		margin: 4% auto 15% auto;
+		border: 1px solid #888;
+		width: 40%;
+		padding-bottom: 30px;
+		}
+		/* The Close Button (x) */
+		.close {
+		position: absolute;
+		right: 2px;
+		top: -2px;
+		color: #000;
+		font-size: 35px;
+		font-weight: bold;
+		}
+		.close:hover,.close:focus {
+		color: red;
+		cursor: pointer;
+		}
+		/* Add Zoom Animation */
+		.animate {
+		animation: zoom 0.6s
+		}
+		.imgcontainer
+		{
+		height: 50px;
+		background-color:#f8b864;
+		text-align: center;
+		font-size: 10px;
+		width: 448.5px;
+		position: relative;
+		padding-top: 3px;
+		margin-top: -28px;
+		margin-left: -25px;
+		
+		}
+
+		#main .signup-btn
+		{
+			
+			float: right;
+            font-family: proxima_novasemibold", sans-serif;
+            padding: 3px 15px;
+            border-radius: 5px;
+            background: #f2f2f2;
+            color: #ffff;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 16px;
+		}
+
+		.imgcontainer h1
+		{
+			font-size: 25px;
+		}
+
+		.modal
+		{
+			margin-left: 0px !important;
+		}
+
+		select
+		{
+			padding:4px;
+		width:96%;
+		height:40px  !important;
+		margin-top:15px;
+		font-size:14px
+		}
+
+
+    form h2
+    {
+    	line-height: 0px !important;
+    }
+
+		</style>
+</head>
+<header id="header" class="header-section">
+	<div class="top-header">
+		<div class="container">
+			<div class="top-content-wrap row">
+				<div class="col-sm-8">
+					<ul class="left-info">
+						<li><a href="#"><i class="ti-email"></i>pjay5095@gmail.com</a></li>
+						<li><i style="color: white" class="ti-mobile"></i>(+91)7359446501</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 d-none d-md-block">
+					<ul class="right-info">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-header">
+		<div class="container">
+			<div class="bottom-content-wrap row">
+				<div class="col-sm-4">
+					<div class="site-branding">
+						<img src="img/NGGGO.jpg" alt="Brand">
+					</div>
+				</div>
+				<div class="col-sm-8 text-right text-left">
+					<ul id="mainmenu" class="nav navbar-nav nav-menu">
+						<li class="active"> <a href="index.php">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="#">Ngo Directory</a>
+							<ul>
+								<li><a href="statewise.php">NGO's (State-wise)</a></li>
+
+								<li><a href="sectorwise.php">NGO's (Sector-wise)</a></li>
+							</ul>
+						</li>
+						<li><a href="event.html">Search NGOs</a></li>
+
+						<li><a href="#">BlockList NGOS</a> </li>
+					</ul>
+					<ul class="nav-bar inline">
+
+						<li> <a><button class="log-sign new-change" onclick="document.getElementById('modal-wrapper').style.display='block'">
+									Login/Register</button></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-wrapper" class="modal">
+
+		<div id="main">
+			<!-- Create Div First For Login Form -->
+			<div id="first">
+				<form action="controller.php" method="post">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+						<h1 style="text-align:center background-color:#f8b864 width: 100% font-size: 20px">USER AUTHENTACTION</h1>
+					</div><br>
+					<h2>LOG IN
+						<hr>
+					</h2>
+					<input id="loginemail" placeholder="Email" type="text">
+					<input id="loginpassword" placeholder="Password" type="password">
+					<input id="login" type="button" name="signin" value="Sign In"><br><br>
+					<div class="row">
+						<p id="one" class="col-lg-6"><a href="#">Forgot Password ?</a></p>
+						<p id="two" class="col-md-6"><button type="button" class="signup-btn" style="width:325px opacity:1;"><a class="signup"
+								 href="#" id="signup">Register New Ngo</a></button></p>
+
+					</div>
+				</form>
+			</div>
+			<!-- Create Div Second For Signup Form-->
+			<div id="second">
+				<form action="mmc.php" id="form" method="post" name="form">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+						<h1 style="text-align:center background-color:#f8b864 width: 100%">USER AUTHENTACTION</h1>
+					</div><br>
+					<h2>SIGN UP
+						<hr>
+					</h2>
+					<input id="name" placeholder="Register Ngo's Name" name="name" type="text">
+					<input id="ngoid" placeholder="Enter Registration Id" name="reg_id" type="text">
+					<input id="registeremail" placeholder="Email" name="email" type="text">
+					<input id="registerpassword" placeholder="Password" name="password" type="password">
+					<input id="contact" placeholder="Contact Number" name="mobile" type="text">
+					<input id="pan" placeholder="Enter Pan Number" name="pan" type="text">
+					<input id="Address" placeholder="Enter Ngo's Address" name="address" type="text">
+
+
+
+					<script>
+		// console.log('Aasdfwasd');
+		function getState(val) {
+			// alert("Hi");
+			$.ajax({
+				type: "POST",
+				url: "get_state.php",
+				data: {
+					'state_id': val
+				},
+				success: function (data) {
+					$("#state-list").html(data);
+				}
+			});
+		}
+	</script>
+
+
+	<select name="state" id="country-list" onchange="getState(this.value);">
+				<option value="">Select state</option>
+				<?php
+			$q = $d->select("cities");
+			while($result = mysqli_fetch_array($q)){
+				?>
+				<option value="<?php echo $result["state_id"];?>">
+					<?php echo $result["state_name"];?>
+				</option>
+				<?php 
+			} 
+			?>
+			</select>
+			
+			<select id="state-list" name="city">
+				<option value="" selected="selected">Select city</option>
+			</select>
+			
+			<?php
+		if(isset($_POST['state_id'])){
+		$cd = $_POST["state_id"];
+		if($_POST["state_id"] == null) {
+				?>
+			<option>Select State</option>
+			<?php
+
+exit();
+			} 
+		$q = $d->select("cities","state_id=$cd");
+		//$result = mysqli_fetch_array($q);
+		// if ($result>0){
+		if(mysqli_num_rows($q) > 0)
+		{
+			while($result = mysqli_fetch_array($q)){
+				?>
+			<option value="<?php echo $result[" city_id"];?>">
+				<?php echo $result["city_name"];?>
+			</option>
+			<?php 
+			
+
+			}
+		}
+	}
+?>
+
+
+
+					<select name="sectors">
+						<option value="">Sector</option>
+						<option>
+							Agriculture </option>
+						<option>
+							Animal Husbandry, Dairying & Fisheries </option>
+						<option>
+							Art & Culture </option>
+						<option>
+							Biotechnology </option>
+						<option>
+							Children </option>
+						<option>
+							Civic Issues </option>
+						<option>
+							Dalit Upliftment </option>
+						<option>
+							Differently Abled </option>
+						<option>
+							Disaster Management </option>
+						<option >
+							Drinking Water </option>
+						<option >
+							Education & Literacy </option>
+						<option >
+							Aged/Elderly </option>
+						<option >
+							Environment & Forests </option>
+						<option >
+							Food Processing </option>
+						<option >
+							Health & Family Welfare </option>
+						<option >
+							HIV/AIDS </option>
+						<option >
+							Housing </option>
+						<option >
+							Human Rights </option>
+						<option >
+							Information & Communication Technology </option>
+						<option >
+							Labour & Employment </option>
+						<option >
+							Land Resources </option>
+						<option >
+							Legal Awareness & Aid </option>
+						<option >
+							Micro Finance (SHGs) </option>
+						<option >
+							Micro Small & Medium Enterprises </option>
+						<option >
+							Minority Issues </option>
+						<option >
+							New & Renewable Energy </option>
+						<option >
+							Nutrition </option>
+						<option>
+							Panchayati Raj </option>
+						<option>
+							Prisoner's Issues </option>
+						<option>
+							Right to Information & Advocacy </option>
+						<option>
+							Rural Development & Poverty Alleviation </option>
+						<option>
+							Science & Technology </option>
+						<option>
+							Scientific & Industrial Research </option>
+						<option>
+							Sports </option>
+						<option>
+							Tourism </option>
+						<option>
+							Tribal Affairs </option>
+						<option>
+							Urban Development & Poverty Alleviation </option>
+						<option>
+							Vocational Training </option>
+						<option>
+							Water Resources </option>
+						<option>
+							Women's Development & Empowerment </option>
+						<option>
+							Youth Affairs </option>
+						<option>
+							Any Other </option>
+					</select>
+
+
+
+					<select class="" id="" name="ngo_type">
+						<option value="">Select Ngo Type</option>
+						<option value="1">Private Sector Companies (Sec 25)</option>
+						<option value="2">Cooperative Society</option>
+						<option value="3">Registered Societies (Non-Government)</option>
+						<option value="4">Trust (Non-Government)</option>
+						<option value="5">Other Registered Entities (Non-Government)</option>
+						<option value="6">Academic Institutions (Private)</option>
+
+					</select>
+
+					<!--input id="register" type="submit" name="register" value="Create your account"-->
+					<button type="submit" name="reg_ngo" id="register">SUBMIT</button>
+
+
+
+					<div>
+						<br>
+						<p id="two">Already have an account? <button type="button" class="signup-btn" style="width:325px opacity:1;"> <a
+								 class="signup" href="#" id="signin">Sign in</a></button></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		</form>
+	</div>
+
+
+	<script>
+		$(document).ready(function () {
+			// On Click SignIn Button Checks For Valid E-mail And All Field Should Be Filled
+			$("#login").click(function () {
+				var email = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/i);
+				if ($("#loginemail").val() == '' || $("#loginpassword").val() == '') {
+					alert("Please fill all fields...!!!!!!");
+				} else if (!($("#loginemail").val()).match(email)) {
+					alert("Please enter valid Email...!!!!!!");
+				} else {
+					alert("You have successfully Logged in...!!!!!!");
+					$("form")[0].reset();
+				}
+			});
+			$("#register").click(function () {
+				var email = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/i);
+				if ($("#name").val() == '' || $("#registeremail").val() == '' || $("#registerpassword").val() == '' || $(
+						"#contact").val() == '') {
+					alert("Please fill all fields...!!!!!!");
+				} else if (!($("#registeremail").val()).match(email)) {
+					alert("Please enter valid Email...!!!!!!");
+				} else {
+					alert("You have successfully Sign Up, Now you can login...!!!!!!");
+					$("#form")[0].reset();
+					$("#second").slideUp("slow", function () {
+						$("#first").slideDown("slow");
+					});
+				}
+			});
+			// On Click SignUp It Will Hide Login Form and Display Registration Form
+			$("#signup").click(function () {
+				$("#first").slideUp("slow", function () {
+					$("#second").slideDown("slow");
+				});
+			});
+			// On Click SignIn It Will Hide Registration Form and Display Login Form
+			$("#signin").click(function () {
+				$("#second").slideUp("slow", function () {
+					$("#first").slideDown("slow");
+				});
+			});
+		});
+	</script>
+</header><!-- /Header Section -->
